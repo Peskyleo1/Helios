@@ -1,0 +1,7 @@
+{
+  "name": "Helios",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
