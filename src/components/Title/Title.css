@@ -1,0 +1,9 @@
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: medium;
+    font-size: 20px;
+    margin: 0;
+
+    color: var(--custom-color-titles);
+}

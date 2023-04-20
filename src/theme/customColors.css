@@ -1,0 +1,171 @@
+/* customic Variables and Theming. For more info, please see:
+http://customicframework.com/docs/theming/ */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: medium;
+  src: url('../fonts/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/Roboto-Black.ttf');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/Roboto-Bold.ttf');
+}
+/** customic CSS Variables **/
+:root {
+  /** App Colors **/
+  --custom-color-primary: #FFB800;
+  --custom-color-titles: #000;
+  --custom-color-background: #fff;
+  --custom-color-buttons: #F0F0F0;
+  --custom-color-text: #999999;
+  --custom-color-textContrast: #fff;
+  --custom-color-shadow: rgba(0, 0, 0, 0.25);
+
+  /** UV Colors **/
+  --custom-color-purple: #8666E1;
+  --custom-color-red: #FF5353;
+  --custom-color-orange: #FF8753;
+  --custom-color-yellow: #FFCF53;
+  --custom-color-green: #73D843;
+  --custom-color-darkBlue: #153A4A;
+  --custom-color-sun: #FFE39A;
+
+  /** Skin Colors **/
+  --custom-skin-color-1: #FFE6CF;
+  --custom-skin-color-2: #FFD0A5;
+  --custom-skin-color-3: #E4A971;
+  --custom-skin-color-4: #BC8859;
+  --custom-skin-color-5: #A06835;
+  --custom-skin-color-6: #412A15;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  /*
+   * Dark Colors
+   * -------------------------------------------
+   */
+
+  body {
+    /** App Colors **/
+  --custom-color-primary: #6B5496;
+  --custom-color-titles: #fff;
+  --custom-color-background: #08171E;
+  --custom-color-buttons: rgba(255, 255, 255, 0.1);
+  --custom-color-text: #6C6C6C;
+  --custom-color-textContrast: #fff;
+  --custom-color-shadow: rgba(255, 255, 255, 0.25);
+
+  /** UV Colors **/
+  --custom-color-purple: #8666E1;
+  --custom-color-red: #FF5353;
+  --custom-color-orange: #FF8753;
+  --custom-color-yellow: #FFCF53;
+  --custom-color-green: #73D843;
+  --custom-color-darkBlue: #153A4A;
+  --custom-color-sun: #FFE39A;
+
+  /** Skin Colors **/
+  --custom-skin-color-1: #FFE6CF;
+  --custom-skin-color-2: #FFD0A5;
+  --custom-skin-color-3: #E4A971;
+  --custom-skin-color-4: #BC8859;
+  --custom-skin-color-5: #A06835;
+  --custom-skin-color-6: #412A15;
+  }
+
+  /*
+   * iOS Dark Theme
+   * -------------------------------------------
+   */
+
+  .ios body {
+    --custom-background-color: #000000;
+    --custom-background-color-rgb: 0,0,0;
+
+    --custom-text-color: #ffffff;
+    --custom-text-color-rgb: 255,255,255;
+
+    --custom-color-step-50: #0d0d0d;
+    --custom-color-step-100: #1a1a1a;
+    --custom-color-step-150: #262626;
+    --custom-color-step-200: #333333;
+    --custom-color-step-250: #404040;
+    --custom-color-step-300: #4d4d4d;
+    --custom-color-step-350: #595959;
+    --custom-color-step-400: #666666;
+    --custom-color-step-450: #737373;
+    --custom-color-step-500: #808080;
+    --custom-color-step-550: #8c8c8c;
+    --custom-color-step-600: #999999;
+    --custom-color-step-650: #a6a6a6;
+    --custom-color-step-700: #b3b3b3;
+    --custom-color-step-750: #bfbfbf;
+    --custom-color-step-800: #cccccc;
+    --custom-color-step-850: #d9d9d9;
+    --custom-color-step-900: #e6e6e6;
+    --custom-color-step-950: #f2f2f2;
+
+    --custom-item-background: #000000;
+
+    --custom-card-background: #1c1c1d;
+  }
+
+  .ios custom-modal {
+    --custom-background-color: var(--custom-color-step-100);
+    --custom-toolbar-background: var(--custom-color-step-150);
+    --custom-toolbar-border-color: var(--custom-color-step-250);
+  }
+
+
+  /*
+   * Material Design Dark Theme
+   * -------------------------------------------
+   */
+
+  .md body {
+    --custom-background-color: #121212;
+    --custom-background-color-rgb: 18,18,18;
+
+    --custom-text-color: #ffffff;
+    --custom-text-color-rgb: 255,255,255;
+
+    --custom-border-color: #222222;
+
+    --custom-color-step-50: #1e1e1e;
+    --custom-color-step-100: #2a2a2a;
+    --custom-color-step-150: #363636;
+    --custom-color-step-200: #414141;
+    --custom-color-step-250: #4d4d4d;
+    --custom-color-step-300: #595959;
+    --custom-color-step-350: #656565;
+    --custom-color-step-400: #717171;
+    --custom-color-step-450: #7d7d7d;
+    --custom-color-step-500: #898989;
+    --custom-color-step-550: #949494;
+    --custom-color-step-600: #a0a0a0;
+    --custom-color-step-650: #acacac;
+    --custom-color-step-700: #b8b8b8;
+    --custom-color-step-750: #c4c4c4;
+    --custom-color-step-800: #d0d0d0;
+    --custom-color-step-850: #dbdbdb;
+    --custom-color-step-900: #e7e7e7;
+    --custom-color-step-950: #f3f3f3;
+
+    --custom-item-background: #1e1e1e;
+
+    --custom-toolbar-background: #1f1f1f;
+
+    --custom-tab-bar-background: #1f1f1f;
+
+    --custom-card-background: #1e1e1e;
+  }
+}
